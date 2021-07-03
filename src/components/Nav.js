@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { HashLink as Link } from 'react-router-hash-link';
-// import {Link} from 'react-router-dom';
 import { motion } from "framer-motion";
 
 
@@ -40,7 +39,6 @@ const NavStyle = styled.nav`
   a {
     color: white;
     text-decoration: none;
-    font-size: 1.4rem;
   }
 
   ul {
@@ -68,6 +66,20 @@ const NavStyle = styled.nav`
         padding: 0;
       }
     }
+  }
+`;
+
+const Line = styled(motion.div)`
+  height: 0.3rem;
+  background: #00695C;
+  width: 0%;
+  position: absolute;
+  bottom: -80%;
+  left: 60%;
+  @media (max-width: 1300px) {
+    left: 0%;
+    width: 100%;
+
   }
 `;
 

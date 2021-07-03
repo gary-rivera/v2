@@ -34,7 +34,7 @@ function IntroSection() {
           whileTap={{ scale: 0.95 }}
           onClick = {(evt) => {
               evt.preventDefault();
-              window.open('/resume.pdf')
+              window.open(`${process.env.PUBLIC_URL}/resume.pdf`)
             }}
           variants={fade}
         >
