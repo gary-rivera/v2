@@ -27,7 +27,7 @@ function Disclaimer({disclaimer, setDisclaimer}) {
           <a href="https://www.100daysofcode.com/" target="_blank" rel="noreferrer"> #100DaysOfCode</a> challenge.
         <br/>
         <br/>
-        Full website will be launchd on July 7th, 2021. 
+        Full website will be launched on July 7th, 2021. 
       </motion.p>
         <Link to="/#main">
         <motion.button 
