@@ -1,11 +1,11 @@
 import SectionTitle from "../utils/SectionTitle";
-import profilePic from '../img/profile_pic.jpeg'
-import UnderMaintenance from '../utils/UnderMaintenance'
+import profilePic from '../img/profile-picture1.jpeg';
+import UnderMaintenance from '../utils/UnderMaintenance';
 
 //Styling
 import styled from "styled-components";
-import { AboutStyle, DescriptionStyle /*, ImageStyle, HideStyle*/ } from '../styles.js';
-// import { motion } from "framer-motion";
+import { AboutStyle, DescriptionStyle , ImageStyle, HideStyle } from '../styles.js';
+import { motion } from "framer-motion";
 import { /*titleAnim, fade, photoAnim,*/ scrollReveal } from '../animation'
 import { useScroll } from "../utils/useScroll";
 // import Wave from './Wave'
@@ -43,9 +43,9 @@ function AboutSection() {
           <li>Elm</li>
           </ul>
           </TextStyle>
-          <ImageStyle>
-          <img src={profilePic} alt="profile portrait"/>
-          </ImageStyle>
+          <ProfileImageStyle>
+              <img src={profilePic} alt="profile portrait"/>
+          </ProfileImageStyle>
         </AboutContainerStyle> */}
       </MaintenanceStyle>
     </AboutStyle>
@@ -55,6 +55,18 @@ function AboutSection() {
 const MaintenanceStyle = styled(DescriptionStyle)`
 
 `;
+
+const ProfileImageStyle = styled(ImageStyle)`
+  img{ 
+    opacity: 0.5;
+    transition: 1s ease-out;
+    color: green;
+  }
+  img:hover { 
+    opacity: 1;
+  }
+`;
+
 
 const TextStyle = styled.div`
   border: 1px solid rgba(255, 255, 255, 1);
