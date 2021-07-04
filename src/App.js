@@ -24,7 +24,8 @@ function App() {
               key="disclaim"
               disclaimer={userDisclaimed} 
               setDisclaimer={setUserDisclaimed}
-            />}
+            />
+          }
         </AnimatePresence>
       </Route>
     </div>
