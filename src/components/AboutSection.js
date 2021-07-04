@@ -21,10 +21,10 @@ function AboutSection() {
       animate={controls}
       ref={element}
     >
-      <MaintenanceStyle id="HERE_I_AM">
+      <MaintenanceStyle>
         <SectionTitle title="About" index="1"/>
-        {/* <UnderMaintenance className="maintenance-icon" /> */}
-        <AboutContainerStyle id="hereIAm">
+        <UnderMaintenance className="maintenance-icon" />
+        {/* <AboutContainerStyle id="hereIAm">
           <TextStyle>
           <motion.p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod dicta deleniti eos unde nobis esse, cupiditate molestias deserunt nemo. Repellat officiis, reprehenderit mollitia voluptatem quasi animi inventore doloremque architecto error aliquid nihil reiciendis. 
@@ -51,7 +51,7 @@ function AboutSection() {
           <ProfileImageStyle>
             <img className="headshot" src={profilePic} alt="profile portrait"/>
           </ProfileImageStyle>
-        </AboutContainerStyle>
+        </AboutContainerStyle> */}
       </MaintenanceStyle>
     </AboutStyle>
   )
