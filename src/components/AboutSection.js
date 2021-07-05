@@ -6,7 +6,7 @@ import UnderMaintenance from '../utils/UnderMaintenance';
 import styled from "styled-components";
 import { AboutStyle, DescriptionStyle , ImageStyle, HideStyle } from '../styles.js';
 import { motion } from "framer-motion";
-import { /*titleAnim, fade, photoAnim,*/ scrollReveal } from '../animation'
+import { /*fade, photoAnim,*/ scrollReveal } from '../animation'
 import { useScroll } from "../utils/useScroll";
 
 
@@ -21,9 +21,10 @@ function AboutSection() {
       animate={controls}
       ref={element}
     >
-      <MaintenanceStyle>
-        <SectionTitle title="About" index="1"/>
-        {/* <UnderMaintenance className="maintenance-icon" /> */}
+      <DescriptionStyle>
+        <HideStyle>
+             <SectionTitle title="About" index="1"/>
+        </HideStyle>
         <AboutContainerStyle id="hereIAm">
           <TextStyle>
           <motion.p>
@@ -50,15 +51,10 @@ function AboutSection() {
             <img className="headshot" src={profilePic} alt="profile portrait"/>
           </ProfileImageStyle>
         </AboutContainerStyle>
-      </MaintenanceStyle>
+      </DescriptionStyle>
     </AboutStyle>
   )
 }
-
-const MaintenanceStyle = styled(DescriptionStyle)`
-
-`;
-
 
 const AboutContainerStyle = styled.div`
   display:flex;

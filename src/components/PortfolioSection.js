@@ -23,9 +23,7 @@ function PortfolioSection() {
     >
       <DescriptionStyle>
         <HideStyle>
-          <motion.h2 id="portfolio" variants={titleAnim}>
-            <SectionTitle title="Portfolio" index="2"/>
-          </motion.h2>
+          <SectionTitle title="Portfolio" index="2"/>
         </HideStyle>
         <UnderMaintenance />
         {/* <CardsStyle>
