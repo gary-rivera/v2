@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { AboutStyle, DescriptionStyle, HideStyle } from '../styles.js';
 import { motion } from "framer-motion";
 import { titleAnim, fade } from '../animation'
-// TODO: decide if wave can be included somewowimport Wave from './Wave'
 
 function IntroSection() {
   return (
@@ -23,9 +22,10 @@ function IntroSection() {
         </motion.div>
         <HideStyle>
           <motion.p variants={titleAnim}>
-            I'm an outgoing challenge-seeker intrigued by offering creative insight to real-world challenges. 
+            California-native video-gamer turned software developer. 
             <br/>
-            Currently interning as a developer at <a href="http://numbersapi.com/">Numbers API</a>. 
+            Offering creative insight to unique challenges is my jam. 
+            <br/>
           </motion.p>
         </HideStyle>
 
@@ -64,11 +64,11 @@ const IntroStyle = styled(AboutStyle)`
   p {
     /* display and box model */
     padding: 1.5rem 0rem;
-    max-width: 25vw;
+    max-width: 30vw;
 
 
     /* text */
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: light;
     text-align: center;
     color: rgba(244, 244, 244, 0.75);
