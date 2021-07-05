@@ -23,21 +23,19 @@ function AboutSection() {
     >
       <MaintenanceStyle>
         <SectionTitle title="About" index="1"/>
-        <UnderMaintenance className="maintenance-icon" />
-        {/* <AboutContainerStyle id="hereIAm">
+        {/* <UnderMaintenance className="maintenance-icon" /> */}
+        <AboutContainerStyle id="hereIAm">
           <TextStyle>
           <motion.p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod dicta deleniti eos unde nobis esse, cupiditate molestias deserunt nemo. Repellat officiis, reprehenderit mollitia voluptatem quasi animi inventore doloremque architecto error aliquid nihil reiciendis. 
-          <br/>
-          <br/>
-          Fugit fuga quae optio magnam commodi laborum nobis est quas, consequatur alias quidem, aliquam modi, eaque laboriosam debitis sequi repudiandae amet. Voluptatem nulla porro animi dicta laudantium ducimus eos atque magni, assumenda recusandae quae maxime vitae temporibus labore alias illo consequatur expedita amet sequi fugiat quaerat ex qui autem quis! 
-          <br/>
-          <br/>
-          Vel officiis laboriosam molestias expedita nihil, recusandae aliquid temporibus nulla, totam quisquam sint in sequi, possimus maiores!
+            I'm an aspiring software developer that just graduated from <span>Rithm School</span>, a full-stack web development bootcamp in San Francisco, CA. Since then I've interned with <span>Numbers API</span> and now I'm focusing on finding a full-time role that I can continue to develop all of my skills!
+            <br/>
+            <br/>
+            When I'm not applying to jobs I mostly like to tinker with past projects and contributing to open-source online projects. I'm also currently doing the <span>#100DaysOfCode</span> so if you have any suggestions on what projects to work on let me know! 
+            <br/>
           </motion.p>
           <br/>
           <div className="top-skills"> 
-            <p>Here's a list of my strongest technologies to date: </p>
+            <p>As of now, some of my favorite technologies to work with are: </p>
             <ul>
               <li>Javascript (ES6+)</li>
               <li>React.js (v17.0.2)</li>
@@ -51,7 +49,7 @@ function AboutSection() {
           <ProfileImageStyle>
             <img className="headshot" src={profilePic} alt="profile portrait"/>
           </ProfileImageStyle>
-        </AboutContainerStyle> */}
+        </AboutContainerStyle>
       </MaintenanceStyle>
     </AboutStyle>
   )
