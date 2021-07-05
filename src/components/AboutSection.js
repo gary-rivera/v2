@@ -67,8 +67,6 @@ const AboutContainerStyle = styled.div`
   margin: 0;
   margin-right: 0 !important;
   padding: 1.5rem 3rem 3rem 3rem;
-
-  /*  */
 `;
 
 const TextStyle = styled.div`
@@ -124,7 +122,9 @@ const ProfileImageStyle = styled.div`
   width: 15vw;
   padding-left: 1rem;
 
+
   img{ 
+    box-shadow:rgba(82,183,136, 0.5) 12.5px 12.5px /*, rgba(82,183,136, 0.2) 10px 10px, rgba(82,183,136, 0.1) 15px 15px, rgba(82,183,136, 0.05) 20px 20px*/;
     border-radius: 5px;
     width: inherit;
     height: inherit;
