@@ -113,4 +113,27 @@ const ProjectStyle = styled.div`
   }
 `;
 
+/**
+ * const ProfileImageStyle = styled.div`
+  max-height: 45%; 
+  width: 15vw;
+  padding-left: 1rem;
+
+
+  img{ 
+    box-shadow:rgba(82,183,136, 0.5) 12.5px 12.5px;
+    border-radius: 5px;
+    width: inherit;
+    height: inherit;
+    opacity: 0.5;
+    transition: 1s ease-out;
+    color: green;
+  }
+  img:hover { 
+    opacity: 1;
+  }
+`;
+ */
+
+
 export default Project;

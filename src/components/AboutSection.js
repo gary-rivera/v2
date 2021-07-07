@@ -1,12 +1,11 @@
 import SectionTitle from "../utils/SectionTitle";
 import profilePic from '../img/profile-picture1.jpeg';
-import UnderMaintenance from '../utils/UnderMaintenance';
 
 //Styling
 import styled from "styled-components";
-import { AboutStyle, DescriptionStyle , ImageStyle, HideStyle } from '../styles.js';
+import { AboutStyle, DescriptionStyle , HideStyle } from '../styles.js';
 import { motion } from "framer-motion";
-import { /*fade, photoAnim,*/ scrollReveal } from '../animation'
+import { scrollReveal } from '../animation'
 import { useScroll } from "../utils/useScroll";
 
 
@@ -120,7 +119,7 @@ const ProfileImageStyle = styled.div`
 
 
   img{ 
-    box-shadow:rgba(82,183,136, 0.5) 12.5px 12.5px /*, rgba(82,183,136, 0.2) 10px 10px, rgba(82,183,136, 0.1) 15px 15px, rgba(82,183,136, 0.05) 20px 20px*/;
+    box-shadow:rgba(82,183,136, 0.5) 12.5px 12.5px;
     border-radius: 5px;
     width: inherit;
     height: inherit;

@@ -1,6 +1,5 @@
 import maintenance2 from '../img/maintenance2.png';
 import { HashLink as Link } from 'react-router-hash-link';
-// import {Link} from 'react-router-dom';
 
 
 //styling
@@ -20,9 +19,9 @@ function Disclaimer({disclaimer, setDisclaimer}) {
     <DisclaimerStyle>
       <img src={maintenance2} alt="maintenance disclaimer"/>
       <motion.p variants={fade}>
-        <h3>Disclaimer: </h3>
+        <h3>Heads up!</h3>
         <br/>
-        I'm currently revamping my website. While I'm finishing up the final touches of transitioning to React feel free to follow me <a href="https://twitter.com/GaryDevelops" target="_blank" rel="noreferrer">
+        I'm currently revamping my website so things may be a bit buggy while navigating around. While I'm finishing up the final touches of transitioning to React feel free to follow me <a href="https://twitter.com/GaryDevelops" target="_blank" rel="noreferrer">
           <span>@GaryDevelops</span></a> as I progress through the 
           <a href="https://www.100daysofcode.com/" target="_blank" rel="noreferrer"> #100DaysOfCode</a> challenge.
         <br/>
