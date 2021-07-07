@@ -3,7 +3,8 @@ import Nav from './components/Nav';
 import Main from './pages/Main';
 import Disclaimer from './components/Disclaimer'
 import GlobalStyle from './utils/GlobalStyle';
-import { Route } from 'react-router-dom';
+import NotFound from './components/NotFound'
+import { Route, Switch, Redirect } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 
 
@@ -15,19 +16,22 @@ function App() {
     <div className="App">
       <GlobalStyle />
       <Nav />
-      <Route path="/"> 
-        <AnimatePresence>
-          {userDisclaimed ? 
-            <Main key="main"/>
-            :
-            <Disclaimer
-              key="disclaim"
-              disclaimer={userDisclaimed} 
-              setDisclaimer={setUserDisclaimed}
-            />
-          }
-        </AnimatePresence>
-      </Route>
+      <Switch>
+        <Route path="/"> 
+          <AnimatePresence>
+            {userDisclaimed ? 
+              <Main key="main"/>
+              :
+              <Disclaimer
+                key="disclaim"
+                disclaimer={userDisclaimed} 
+                setDisclaimer={setUserDisclaimed}
+              />
+            }
+          </AnimatePresence>
+        </Route>
+        {/* <Route component={NotFound} /> */}
+      </Switch>
     </div>
   );
 }

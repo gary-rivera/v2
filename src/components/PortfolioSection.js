@@ -25,10 +25,10 @@ function PortfolioSection() {
         <HideStyle>
           <SectionTitle title="Portfolio" index="2"/>
         </HideStyle>
-        {/* <UnderMaintenance /> */}
-        <CardsStyle>
+        <UnderMaintenance />
+        {/* <CardsStyle>
           <Project />
-        </CardsStyle>
+        </CardsStyle> */}
       </DescriptionStyle>
     </PortfolioStyle>
   )

@@ -1,6 +1,5 @@
 import maintenance2 from '../img/maintenance2.png';
 import { HashLink as Link } from 'react-router-hash-link';
-// import {Link} from 'react-router-dom';
 
 
 //styling
