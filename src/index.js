@@ -7,7 +7,6 @@ import { HashRouter } from 'react-router-dom';
 
 ReactDOM.render(
   <React.StrictMode>
-    {console.log(`BASENAME! ${process.env.PUBLIC_URL}`)}
     <HashRouter basename={process.env.PUBLIC_URL} hashType="noslash">
       <App/>
     </HashRouter>
