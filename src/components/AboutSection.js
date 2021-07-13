@@ -1,10 +1,9 @@
 import SectionTitle from "../utils/SectionTitle";
 import profilePic from '../img/profile-picture1.jpeg';
-import UnderMaintenance from '../utils/UnderMaintenance';
 
 //Styling
 import styled from "styled-components";
-import { AboutStyle, DescriptionStyle , ImageStyle, HideStyle } from '../styles.js';
+import { AboutStyle, DescriptionStyle , HideStyle } from '../styles.js';
 import { motion } from "framer-motion";
 import { /*fade, photoAnim,*/ scrollReveal } from '../animation'
 import { useScroll } from "../utils/useScroll";
