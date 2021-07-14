@@ -38,7 +38,6 @@ const PortfolioStyle = styled(AboutStyle)`
   display: flex;
   justify-content: center;
   h2 {
-    /* padding-bottom: 5rem; */
     text-align: center;
   }
 

@@ -12,6 +12,8 @@ import styled from "styled-components";
 
 
 function Project() {
+
+  let gif = 'https://media.giphy.com/media/61GtR9e6XhUeY9hHpU/giphy.gif'
   return (
     <ProjectStyle>
       <div className="image-container">
@@ -47,10 +49,10 @@ function Project() {
 
 const ProjectStyle = styled.div`
   /* background: #282828; */
-  border: 1px solid rgba(255, 255, 255, 0.5); 
-  border-radius: 5px;
+  /* border: 1px solid rgba(255, 255, 255, 0.5);  */
   display:flex;
-  width: 50vw;
+  width: 45vw;
+  
 
   h4{
     font-size: 2rem;
@@ -67,8 +69,6 @@ const ProjectStyle = styled.div`
   }
 
   .project-image {
-    max-width: 100%;
-    border-radius: 5px;
     display:block;
     z-index: -1;
   }
@@ -113,27 +113,6 @@ const ProjectStyle = styled.div`
   }
 `;
 
-/**
- * const ProfileImageStyle = styled.div`
-  max-height: 45%; 
-  width: 15vw;
-  padding-left: 1rem;
-
-
-  img{ 
-    box-shadow:rgba(82,183,136, 0.5) 12.5px 12.5px;
-    border-radius: 5px;
-    width: inherit;
-    height: inherit;
-    opacity: 0.5;
-    transition: 1s ease-out;
-    color: green;
-  }
-  img:hover { 
-    opacity: 1;
-  }
-`;
- */
 
 
 export default Project;
