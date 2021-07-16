@@ -10,49 +10,52 @@ import styled from "styled-components";
  * @returns 
  */
 
+function Project({ project }) {
+  const { title, deployedLink, technologies, img, repoLink, description } = project;
 
-function Project() {
-
-  let gif = 'https://media.giphy.com/media/61GtR9e6XhUeY9hHpU/giphy.gif'
   return (
-    <ProjectStyle>
-      <div className="image-container">
-        <a className="repo" href={projects.deployedLink}>
-          <img className="project-image"src={projects.img} alt={projects.title}/>
-        </a>
-      </div>
-      <div className="details-container">
-        <a href={projects.deployedLink}><h4> {projects.title}</h4></a>
-        <div className="description">
-          <p>{projects.description}</p>
+    <ProjectContainer className="project-container" >
+      <div >
+         <div className="image-container">
+          <a className="repo" href={deployedLink}>
+            <img className="project-image"src={img} alt={title}/>
+          </a>
         </div>
-        <div className="footer">
-          <div className="technologies">
-            {projects.technologies.map((technology) => {
-                return <span>{technology}</span>
-              })
-            }
+        {/*
+        <div className="details-container">
+          <a href={deployedLink}><h4> {title}</h4></a>
+          <div className="description">
+            <p>{description}</p>
           </div>
-          <div className="link-icons">
-            <a href={projects.repoLink} >
-              <img src={githubIcon} alt="github link to repo"/>
-            </a>
-            <a href={projects.repoLink}>
-              <img src={linkIcon} alt="direct link to website" />
-            </a>
+          <div className="footer">
+            <div className="technologies">
+              {technologies.map((technology) => {
+                  return <span>{technology}</span>
+                })
+              }
+            </div>
+            <div className="link-icons">
+              <a href={repoLink} >
+                <img src={githubIcon} alt="github link to repo"/>
+              </a>
+              <a href={deployedLink}>
+                <img src={linkIcon} alt="direct link to website" />
+              </a>
+            </div>
           </div>
-        </div>
+        </div> */}
       </div>
-    </ProjectStyle>
+    </ProjectContainer>
   )
 }
 
-const ProjectStyle = styled.div`
+const ProjectContainer = styled.div`
   /* background: #282828; */
-  /* border: 1px solid rgba(255, 255, 255, 0.5);  */
-  display:flex;
-  width: 45vw;
+  border: 3px solid red;
   
+  img {
+    max-width: 200px; 
+  }
 
   h4{
     font-size: 2rem;

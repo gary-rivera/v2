@@ -1,7 +1,8 @@
-import Project from "./Project";
 import { motion } from "framer-motion";
 import SectionTitle from "../utils/SectionTitle";
+import Project from './Project';
 import UnderMaintenance from "../utils/UnderMaintenance";
+import projects from '../utils/projects'
 
 //Styles
 import { AboutStyle, DescriptionStyle, HideStyle } from '../styles.js';
@@ -26,9 +27,12 @@ function PortfolioSection() {
           <SectionTitle title="Portfolio" index="2"/>
         </HideStyle>
         {/* <UnderMaintenance /> */}
-        <CardsStyle>
-          <Project />
-        </CardsStyle>
+        <ProjectsStyle className="hello">
+          {
+            projects && 
+            projects.map(project => <Project project={project}/>)
+          }
+        </ProjectsStyle>
       </DescriptionStyle>
     </PortfolioStyle>
   )
@@ -47,14 +51,13 @@ const PortfolioStyle = styled(AboutStyle)`
   }
 `;
 
-const ProjectBoardStyle = styled(DescriptionStyle)`
-  display: flex;
-  justify-content: center;
-`;
 
-const CardsStyle = styled.div`
+const ProjectsStyle = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
+
+  width: 10rem;
 
   /* flex-wrap: wrap; */
   @media (max-width: 1300px) {
