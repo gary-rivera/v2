@@ -24,7 +24,7 @@ function AboutSection() {
         <HideStyle>
              <SectionTitle title="About" index="1"/>
         </HideStyle>
-        <AboutContainerStyle id="hereIAm">
+        <AboutContainerStyle>
           <TextStyle>
           <motion.p>
             I'm an aspiring software developer that just graduated from <span>Rithm School</span>, a full-stack web development bootcamp in San Francisco, CA. Since then I've interned with <span>Numbers API</span> and now I'm focusing on finding a full-time role that I can continue to develop all of my skills!

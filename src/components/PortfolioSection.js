@@ -6,7 +6,6 @@ import projects from '../utils/projects'
 
 //Styles
 import { AboutStyle, DescriptionStyle, HideStyle } from '../styles.js';
-import { titleAnim } from "../animation";
 import styled from "styled-components";
 import { scrollReveal } from "../animation";
 import { useScroll } from "../utils/useScroll";
@@ -27,20 +26,18 @@ function PortfolioSection() {
           <SectionTitle title="Portfolio" index="2"/>
         </HideStyle>
         {/* <UnderMaintenance /> */}
-        <ProjectsStyle className="hello">
+        <ProjectsContainer className="hello">
           {
             projects && 
             projects.map(project => <Project project={project}/>)
           }
-        </ProjectsStyle>
+        </ProjectsContainer>
       </DescriptionStyle>
     </PortfolioStyle>
   )
 }
 
 const PortfolioStyle = styled(AboutStyle)`
-  display: flex;
-  justify-content: center;
   h2 {
     text-align: center;
   }
@@ -52,12 +49,12 @@ const PortfolioStyle = styled(AboutStyle)`
 `;
 
 
-const ProjectsStyle = styled.div`
+const ProjectsContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  width: 10rem;
+  align-items: center;
+  padding: 1.5rem;
 
   /* flex-wrap: wrap; */
   @media (max-width: 1300px) {
