@@ -1,11 +1,11 @@
-import Project from "./Project";
 import { motion } from "framer-motion";
 import SectionTitle from "../utils/SectionTitle";
+import Project from './Project';
 import UnderMaintenance from "../utils/UnderMaintenance";
+import projects from '../utils/projects'
 
 //Styles
 import { AboutStyle, DescriptionStyle, HideStyle } from '../styles.js';
-import { titleAnim } from "../animation";
 import styled from "styled-components";
 import { scrollReveal } from "../animation";
 import { useScroll } from "../utils/useScroll";
@@ -25,20 +25,20 @@ function PortfolioSection() {
         <HideStyle>
           <SectionTitle title="Portfolio" index="2"/>
         </HideStyle>
-        <UnderMaintenance />
-        {/* <CardsStyle>
-          <Project />
-        </CardsStyle> */}
+        {/* <UnderMaintenance /> */}
+        <ProjectsContainer className="hello">
+          {
+            projects && 
+            projects.map(project => <Project project={project}/>)
+          }
+        </ProjectsContainer>
       </DescriptionStyle>
     </PortfolioStyle>
   )
 }
 
 const PortfolioStyle = styled(AboutStyle)`
-  display: flex;
-  justify-content: center;
   h2 {
-    /* padding-bottom: 5rem; */
     text-align: center;
   }
 
@@ -48,14 +48,13 @@ const PortfolioStyle = styled(AboutStyle)`
   }
 `;
 
-const ProjectBoardStyle = styled(DescriptionStyle)`
-  display: flex;
-  justify-content: center;
-`;
 
-const CardsStyle = styled.div`
+const ProjectsContainer = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
 
   /* flex-wrap: wrap; */
   @media (max-width: 1300px) {

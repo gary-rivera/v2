@@ -5,7 +5,7 @@ import profilePic from '../img/profile-picture1.jpeg';
 import styled from "styled-components";
 import { AboutStyle, DescriptionStyle , HideStyle } from '../styles.js';
 import { motion } from "framer-motion";
-import { /*fade, photoAnim,*/ scrollReveal } from '../animation'
+import { scrollReveal } from '../animation'
 import { useScroll } from "../utils/useScroll";
 
 
@@ -24,7 +24,7 @@ function AboutSection() {
         <HideStyle>
              <SectionTitle title="About" index="1"/>
         </HideStyle>
-        <AboutContainerStyle id="hereIAm">
+        <AboutContainerStyle>
           <TextStyle>
           <motion.p>
             I'm an aspiring software developer that just graduated from <span>Rithm School</span>, a full-stack web development bootcamp in San Francisco, CA. Since then I've interned with <span>Numbers API</span> and now I'm focusing on finding a full-time role that I can continue to develop all of my skills!
@@ -119,7 +119,7 @@ const ProfileImageStyle = styled.div`
 
 
   img{ 
-    box-shadow:rgba(82,183,136, 0.5) 12.5px 12.5px /*, rgba(82,183,136, 0.2) 10px 10px, rgba(82,183,136, 0.1) 15px 15px, rgba(82,183,136, 0.05) 20px 20px*/;
+    box-shadow:rgba(82,183,136, 0.5) 12.5px 12.5px;
     border-radius: 5px;
     width: inherit;
     height: inherit;
