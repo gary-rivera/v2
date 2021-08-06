@@ -17,6 +17,7 @@ import flappyGif from '../img/projectScreenshots/flappyGif.gif'
 
 const projects = [
     {
+      
       title: "Warbler",
       repoLink: 'https://github.com/DataDeveloper7865/warbler',
       deployedLink: 'http://warblology.herokuapp.com/',

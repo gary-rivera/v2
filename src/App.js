@@ -9,7 +9,7 @@ import { AnimatePresence } from 'framer-motion';
 
 //TODO: 404 error catching
 function App() {
-  const [userDisclaimed, setUserDisclaimed] = useState(false);
+  // const [userDisclaimed, setUserDisclaimed] = useState(false);
 
   return (
     <div className="App">
@@ -17,15 +17,7 @@ function App() {
       <Nav />
       <Route path="/"> 
         <AnimatePresence>
-          {userDisclaimed ? 
-            <Main key="main"/>
-            :
-            <Disclaimer
-              key="disclaim"
-              disclaimer={userDisclaimed} 
-              setDisclaimer={setUserDisclaimed}
-            />
-          }
+          <Main key="main"/>
         </AnimatePresence>
       </Route>
     </div>
@@ -33,3 +25,20 @@ function App() {
 }
 
 export default App;
+
+
+/*
+
+Use below and uncomment line 12 when page is under construction.
+
+{
+  userDisclaimed ? 
+    <Main key="main"/>
+    :
+    <Disclaimer
+      key="disclaim"
+      disclaimer={userDisclaimed} 
+      setDisclaimer={setUserDisclaimed}
+    />
+}
+*/
