@@ -35,12 +35,12 @@ const projects = [
     }, 
     {
       title: "Prøductïv",
-      repoLink: 'https://github.com/gary-rivera/flappy-bird-vanilla-js',
+      repoLink: 'https://github.com/gary-rivera/productiv',
       deployedLink: 'https://gary-rivera.github.io/productiv/',
       technologies: ['Javascript', 'React'],
       img: productivImg,
       gif: 'https://media.giphy.com/media/tz2gP43rtCZqyB0tHs/giphy.gif',
-      description: 'The project that cemented my passion for software engineering! A vanilla JS clone of the classic mobile game Flappy Bird. Left click the canvas to have the bird sprite navigate between the pipes and try to beat your high score!'
+      description: 'A react implementation of a Todo App that allows for adding, deleting, and editing tasks as well as assigning each task a priority level.'
     }, 
     {
       title: "FlappyJS",
