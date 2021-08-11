@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/static/js/main.2e5d8386.chunk.js",
-    "main.js.map": "/static/js/main.2e5d8386.chunk.js.map",
+    "main.js": "/static/js/main.e9983c90.chunk.js",
+    "main.js.map": "/static/js/main.e9983c90.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.210a8469.js",
     "runtime-main.js.map": "/static/js/runtime-main.210a8469.js.map",
     "static/js/2.a5516d77.chunk.js": "/static/js/2.a5516d77.chunk.js",
@@ -11,20 +11,18 @@
     "index.html": "/index.html",
     "static/js/2.a5516d77.chunk.js.LICENSE.txt": "/static/js/2.a5516d77.chunk.js.LICENSE.txt",
     "static/media/flappy.e94c24d6.png": "/static/media/flappy.e94c24d6.png",
-    "static/media/flappyGif.2a678c29.gif": "/static/media/flappyGif.2a678c29.gif",
     "static/media/githubIcon.a366bb6f.svg": "/static/media/githubIcon.a366bb6f.svg",
-    "static/media/joblyGif.1d0b968d.gif": "/static/media/joblyGif.1d0b968d.gif",
-    "static/media/joblyImg.45a8a75c.png": "/static/media/joblyImg.45a8a75c.png",
+    "static/media/joblyImg.b1406910.png": "/static/media/joblyImg.b1406910.png",
     "static/media/linkIcon.a94c2cf7.svg": "/static/media/linkIcon.a94c2cf7.svg",
     "static/media/maintenance1.d7205163.png": "/static/media/maintenance1.d7205163.png",
     "static/media/maintenance2.3de3ad25.png": "/static/media/maintenance2.3de3ad25.png",
+    "static/media/productivImg.95f9a4c4.png": "/static/media/productivImg.95f9a4c4.png",
     "static/media/profile-picture1.317b9713.jpeg": "/static/media/profile-picture1.317b9713.jpeg",
-    "static/media/warblerGif.d8bcc24b.gif": "/static/media/warblerGif.d8bcc24b.gif",
     "static/media/warblerImg.fd0afe47.png": "/static/media/warblerImg.fd0afe47.png"
   },
   "entrypoints": [
     "static/js/runtime-main.210a8469.js",
     "static/js/2.a5516d77.chunk.js",
-    "static/js/main.2e5d8386.chunk.js"
+    "static/js/main.e9983c90.chunk.js"
   ]
 }
