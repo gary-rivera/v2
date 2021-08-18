@@ -33,7 +33,6 @@ const NavStyle = styled.nav`
   position: sticky;
   top: 0;
   z-index: 5;
-  position: sticky;
   top: 0;
 
   a {
@@ -52,35 +51,29 @@ const NavStyle = styled.nav`
   }
 
   @media (max-width: 1300px) {
-    flex-direction: column;
-    padding: 2rem 1rem;
+    min-height: 10vh;
     #logo {
-      display: inline-block;
       margin: 1rem;
     }
     ul {
-      padding: 2rem;
-      justify-content: space-around;
-      width: 100%;
+
       li {
-        padding: 0;
+      padding-left: 5rem;
       }
     }
   }
-`;
-
-const Line = styled(motion.div)`
-  height: 0.3rem;
-  background: #00695C;
-  width: 0%;
-  position: absolute;
-  bottom: -80%;
-  left: 60%;
-  @media (max-width: 1300px) {
-    left: 0%;
-    width: 100%;
-
-  }
+  @media (max-width: 900px) {
+    flex-direction: column;
+    #logo {
+      display: inline-block;
+    }
+    ul {
+      li {
+        text-align: center;
+        padding: 1rem 3rem;
+      }
+    }
+        }
 `;
 
 export default Nav;
